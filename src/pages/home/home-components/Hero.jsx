@@ -6,12 +6,12 @@ const PulseText = ({ children, delay }) => {
       className="inline-block"
       initial={{ scale: 1 }}
       animate={{
-        scale: [1, 1.15, 1],  // More subtle pulsing
+        scale: [1, 1.2, 1],  // Slight pulse for a refined effect
         transition: {
-          duration: 1.2,  // Longer duration for smoother pulse
+          duration: 1.5,  // Longer duration for smoother pulsing
           repeat: Infinity,
-          repeatDelay: delay,  // Character stagger effect
-          ease: [0.25, 1, 0.5, 1],  // Smooth cubic easing
+          repeatDelay: delay, // Creates cascading pulse effect
+          ease: "easeInOut",  // Smooth transition
         },
       }}
     >
@@ -64,7 +64,7 @@ const Hero = () => {
             {[' Call', ' Us', ' at', ' '].map((word, wordIndex) => (
               <div className="flex space-x-1" key={wordIndex}>
                 {word.split('').map((char, index) => (
-                  <PulseText key={index} delay={index * 0.1 + wordIndex * 0.3}>
+                  <PulseText key={index} delay={index * 0.15 + wordIndex * 0.3}>
                     {char}
                   </PulseText>
                 ))}
@@ -73,7 +73,7 @@ const Hero = () => {
 
             {/* Apply refined Pulse effect to the phone number */}
             {phoneNumber.map((char, index) => (
-              <PulseText key={index} delay={index * 0.1 + 1}>
+              <PulseText key={index} delay={index * 0.15 + 1}>
                 {char}
               </PulseText>
             ))}

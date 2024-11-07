@@ -51,12 +51,17 @@ const Infrastructure = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <span className="font-bold text-blue-600">Agro Asha’s</span> infrastructure is the
-            backbone of its mission to transform the agricultural landscape. With cutting-edge
-            storage facilities, the company ensures that farm produce stays fresh longer, reducing
-            spoilage and maximizing profits for farmers. Its trade network simplifies the supply
-            chain, seamlessly connecting farmers to vast markets and ensuring efficient product
-            distribution.
+            <span
+              className="font-bold"
+              style={{
+                background: "linear-gradient(312deg, rgba(146,64,14,1) 0%, rgba(245,158,11,1) 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }}
+            >
+              Agro Asha’s
+            </span>{" "}
+            infrastructure is the backbone of its mission to transform the agricultural landscape. With cutting-edge storage facilities, the company ensures that farm produce stays fresh longer, reducing spoilage and maximizing profits for farmers. Its trade network simplifies the supply chain, seamlessly connecting farmers to vast markets and ensuring efficient product distribution.
           </motion.p>
 
           {/* Second Paragraph */}
@@ -66,13 +71,29 @@ const Infrastructure = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Beyond logistics, <span className="font-bold text-blue-600">Agro Asha’s</span> innovative
-            financial services provide small and medium-sized farms with the capital they need to
-            thrive, adopt modern technologies, and scale their operations. By embracing sustainable
-            practices and modern tools, <span className="font-bold text-blue-600">Agro Asha</span> is
-            not only driving growth but also fostering resilience in the farming sector. The
-            company’s infrastructure acts as a catalyst for regional agricultural success, delivering
-            vital services that empower farmers, boost productivity, and ensure long-term sustainability.
+            Beyond logistics,{" "}
+            <span
+              className="font-bold"
+              style={{
+                background: "linear-gradient(312deg, rgba(146,64,14,1) 0%, rgba(245,158,11,1) 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }}
+            >
+              Agro Asha’s
+            </span>{" "}
+            innovative financial services provide small and medium-sized farms with the capital they need to thrive, adopt modern technologies, and scale their operations. By embracing sustainable practices and modern tools,{" "}
+            <span
+              className="font-bold"
+              style={{
+                background: "linear-gradient(312deg, rgba(146,64,14,1) 0%, rgba(245,158,11,1) 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }}
+            >
+              Agro Asha
+            </span>{" "}
+            is not only driving growth but also fostering resilience in the farming sector. The company’s infrastructure acts as a catalyst for regional agricultural success, delivering vital services that empower farmers, boost productivity, and ensure long-term sustainability.
           </motion.p>
         </motion.div>
       </motion.div>
@@ -110,14 +131,28 @@ const Infrastructure = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <span className="font-bold text-blue-600">Asha Agro</span> Company operates within
-            the agricultural sector, focusing on the production, distribution, and financial
-            services for small and medium-sized farms. The company plays a crucial role in
-            transforming the agricultural landscape by providing innovative solutions that enhance
-            productivity and profitability for farmers. In the stock sector, <span className="font-bold text-blue-600">Asha Agro's</span>
-            performance is influenced by various factors, including commodity prices, weather
-            conditions, and government policies. Investors often view agricultural stocks as a hedge
-            against inflation, given their resilience during economic downturns.
+            <span
+              className="font-bold"
+              style={{
+                background: "linear-gradient(312deg, rgba(146,64,14,1) 0%, rgba(245,158,11,1) 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }}
+            >
+              Asha Agro
+            </span>{" "}
+            Company operates within the agricultural sector, focusing on the production, distribution, and financial services for small and medium-sized farms. The company plays a crucial role in transforming the agricultural landscape by providing innovative solutions that enhance productivity and profitability for farmers. In the stock sector,{" "}
+            <span
+              className="font-bold"
+              style={{
+                background: "linear-gradient(312deg, rgba(146,64,14,1) 0%, rgba(245,158,11,1) 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }}
+            >
+              Asha Agro's
+            </span>{" "}
+            performance is influenced by various factors, including commodity prices, weather conditions, and government policies. Investors often view agricultural stocks as a hedge against inflation, given their resilience during economic downturns.
           </motion.p>
 
           {/* Second Paragraph */}
@@ -127,11 +162,18 @@ const Infrastructure = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            As the sector increasingly shifts towards sustainable practices and technological
-            advancements, companies like <span className="font-bold text-blue-600">Asha Agro</span> that
-            adopt innovative approaches are likely to attract greater investor interest. The future
-            of Asha Agro Company appears promising, with opportunities for growth driven by global
-            market dynamics, population growth, and changing dietary preferences.
+            As the sector increasingly shifts towards sustainable practices and technological advancements, companies like{" "}
+            <span
+              className="font-bold"
+              style={{
+                background: "linear-gradient(312deg, rgba(146,64,14,1) 0%, rgba(245,158,11,1) 100%)",
+                WebkitBackgroundClip: "text",
+                color: "transparent"
+              }}
+            >
+              Asha Agro
+            </span>{" "}
+            that adopt innovative approaches are likely to attract greater investor interest. The future of Asha Agro Company appears promising, with opportunities for growth driven by global market dynamics, population growth, and changing dietary preferences.
           </motion.p>
         </motion.div>
 

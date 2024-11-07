@@ -8,6 +8,9 @@ import WelcomeToAshaAgro from "./home-components/WelcomeToAsha";
 import Infrastructure from "./home-components/Infrastructure";
 import Pillars from "./home-components/Pillars";
 import Branches from "./home-components/OurBranches";
+import './MainHome.css'
+
+ 
 
 const MainHome = () => {
   return (

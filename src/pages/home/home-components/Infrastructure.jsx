@@ -8,15 +8,16 @@ const Infrastructure = () => {
       <motion.div
         className="flex flex-wrap justify-center items-center p-5 bg-amber-50 shadow-lg"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {/* Part 1: Image */}
         <motion.div
           className="flex-1 text-center p-2"
-          initial={{ scale: 0.8 }}
+          initial={{ scale: 0.9 }}
           whileInView={{ scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 1 }}
         >
           <img
             src="/assets/infra.jpeg"
@@ -29,24 +30,25 @@ const Infrastructure = () => {
         <motion.div
           className="bg-amber-50 p-5 lg:p-8 rounded-lg max-w-lg lg:max-w-5xl mx-auto my-8 text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           {/* Header with Animation */}
           <motion.h2
-            className="text-3xl lg:text-4xl font-extrabold text-amber-600 mb-20"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-3xl lg:text-4xl font-extrabold text-amber-600 mb-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
           >
             Asha Agro Infrastructure
           </motion.h2>
 
           {/* First Paragraph */}
           <motion.p
-            className="text-lg lg:text-xl text-gray-900 leading-relaxed mb-20"
+            className="text-lg lg:text-xl text-gray-900 leading-relaxed mb-8"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <span className="font-bold text-blue-600">Agro Asha’s</span> infrastructure is the
@@ -61,7 +63,7 @@ const Infrastructure = () => {
           <motion.p
             className="text-lg lg:text-xl text-gray-900 leading-relaxed"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             Beyond logistics, <span className="font-bold text-blue-600">Agro Asha’s</span> innovative
@@ -79,31 +81,33 @@ const Infrastructure = () => {
       <motion.div
         className="flex flex-wrap justify-center items-center p-5 bg-amber-50 shadow-lg"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {/* Part 2: Information */}
         <motion.div
           className="bg-amber-50 p-5 lg:p-8 rounded-lg max-w-lg lg:max-w-5xl mx-auto my-8 text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           {/* Header with Animation */}
           <motion.h2
-            className="text-3xl lg:text-4xl font-extrabold text-amber-600 mb-20"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl lg:text-4xl font-extrabold text-amber-600 mb-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
           >
             Asha Agro Stock
           </motion.h2>
 
           {/* First Paragraph */}
           <motion.p
-            className="text-lg lg:text-xl text-gray-900 leading-relaxed mb-20"
+            className="text-lg lg:text-xl text-gray-900 leading-relaxed mb-8"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <span className="font-bold text-blue-600">Asha Agro</span> Company operates within
@@ -120,7 +124,7 @@ const Infrastructure = () => {
           <motion.p
             className="text-lg lg:text-xl text-gray-900 leading-relaxed"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             As the sector increasingly shifts towards sustainable practices and technological
@@ -134,9 +138,9 @@ const Infrastructure = () => {
         {/* Part 1: Image */}
         <motion.div
           className="flex-1 text-center p-3"
-          initial={{ scale: 0.8 }}
+          initial={{ scale: 0.9 }}
           whileInView={{ scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 1 }}
         >
           <img
             src="/assets/infra-2.jpeg"

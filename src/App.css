@@ -89,6 +89,35 @@ html{
     scroll-behavior: smooth;
   }
   
-  /* Animate.css library for fadeIn effects */
-  @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
   
+  
+  /* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+}
+
+/* Cursor animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animate-typing::after {
+  content: "|";
+  border-right: 3px solid white;
+  animation: blink 0.75s step-end infinite;
+}

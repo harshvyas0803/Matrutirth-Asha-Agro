@@ -52,13 +52,13 @@ const Header = () => {
               className="text-amber-800"
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: animationDuration, ease: "easeInOut" }}
+              transition={{ delay: 0.5, duration: animationDuration, ease: "easeInOut" }}
             >
               Asha
             </motion.p>{" "}
             <motion.p
               className="text-amber-500"
-              initial={{ x: 20, opacity: 0 }}
+              initial={{ x: 40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: animationDuration, ease: "easeInOut" }}
             >

@@ -1,3 +1,94 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+
 html{
     overflow-x: hidden;
 }
+
+    .animate-strong-breathing {
+        animation: strong-breathing 2.5s ease-in-out infinite;
+    }
+
+    @keyframes strong-breathing {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+ 
+    .animate-pulse-box {
+        animation: pulse-box 0.8s ease-in-out infinite; /* Slower animation for visibility */
+    }
+    
+    @keyframes pulse-box {
+        0%, 100% {
+            box-shadow: 0px 0px 40px rgb(255, 191, 71), 0px 0px 60px rgb(255, 128, 0);
+        }
+        50% {
+            box-shadow: 0px 0px 70px rgb(255, 255, 255), 0px 0px 90px rgba(255, 128, 0, 1);
+        }
+    }
+    
+    /* Card hover animation */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 128, 0, 0.6), 0px 0px 50px rgba(255, 191, 71, 0.8);
+  }
+  
+  /* Image hover animation */
+  .card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Gradient text animation */
+  @keyframes gradient-text {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  /* Gradient Background Animation */
+  .bg-gradient-animate {
+    background: linear-gradient(45deg, #ffbf47, #ff7a00, #ffbf47);
+    background-size: 300% 300%;
+    animation: gradient-text 3s ease infinite;
+  }
+  
+  /* Gradient Text for Section Titles */
+  .text-gradient {
+    background: linear-gradient(to right, #ffbf47, #ff7a00);
+    background-clip: text;
+    color: transparent;
+    animation: gradient-text 2s infinite alternate;
+  }
+  
+  /* Adding animation for section headings */
+  .text-gradient-heading {
+    background: linear-gradient(to right, #ffbf47, #ff7a00);
+    background-clip: text;
+    color: transparent;
+    animation: text-gradient 2s infinite alternate;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Animate.css library for fadeIn effects */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+  

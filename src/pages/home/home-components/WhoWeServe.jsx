@@ -34,10 +34,10 @@ const WhoWeServe = () => {
   };
 
   return (
-    <div>
+    <div className="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
       {/* Title Section */}
       <motion.h1
-        className="text-3xl font-bold text-center sm:mx-28 mx-10"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-2 sm:mt-4 mb-2" // Reduced mt here
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -46,189 +46,107 @@ const WhoWeServe = () => {
         Who We Serve
       </motion.h1>
 
-      <motion.h1
-        className="text-[28px] font-bold text-center text-gray-700 sm:mx-28 mx-10"
+      <motion.h2
+        className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-bold text-center text-gray-700 mt-1 sm:mt-2 mb-4" // Reduced mt here
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
         viewport={{ once: true }}
       >
         We have something in store for all
-      </motion.h1>
+      </motion.h2>
 
-      <motion.h1
-        className="sm:mx-28 mx-10 mt-6 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800"
+      {/* Farmers and FPOs Section */}
+      <motion.h3
+        className="text-xl sm:text-2xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800 mt-12 sm:mt-14 lg:mt-16 mb-4"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.7 }}
         viewport={{ once: true }}
       >
         Farmers and FPOs
-      </motion.h1>
+      </motion.h3>
 
-      {/* Cards Section - Farmers and FPOs */}
       <motion.div
-        className="grid sm:grid-cols-4 grid-cols-1 gap-4 sm:mx-28 mx-10 mt-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-12"
         variants={rowVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc3d5688.webp"
-              title="E-Auctions"
-              description="Need to buy or sell stock immediately? Easily participate in e-auctions or create.."
-            />
+        {["E-Auctions", "Loan On Commodity", "Find Warehouses", "Find Buyers-Sellers"].map((title, index) => (
+          <motion.div key={index} variants={cardVariants} className="h-[240px] sm:h-[260px] md:h-[280px] lg:h-[300px]">
+            <motion.div variants={cardItemVariants}>
+              <Card
+                image={`https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc${["3d5688", "3975a1", "378bfa", "34b51b"][index]}.webp`}
+                title={title}
+                description="Access auction services and loans for your commodities. Find the best warehousing solutions and connect with buyers and sellers."
+              />
+            </motion.div>
           </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc3975a1.webp"
-              title="Loan Against Commodity"
-              description="Our loan against commodity services is gaining popularity in the market .."
-            />
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc378bfa.webp"
-              title="Find Warehouses"
-              description="Choose from a range of options, filters and features, a warehouse that fits your needs and size."
-            />
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc34b51b.webp"
-              title="Find Buyers and Sellers"
-              description="With a network of 650,000 farmers from over 600 Farmer Producer Organisations (FPOs) and more than 10,000 o.."
-            />
-          </motion.div>
-        </motion.div>
+        ))}
       </motion.div>
 
       {/* Processors Section */}
-      <motion.h1
-        className="sm:mx-28 mx-10 mt-6 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800"
+      <motion.h3
+        className="text-xl sm:text-2xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800 mt-12 sm:mt-14 lg:mt-16 mb-4"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.6 }}
         viewport={{ once: true }}
       >
         Processors
-      </motion.h1>
+      </motion.h3>
+
       <motion.div
-        className="grid sm:grid-cols-4 grid-cols-1 gap-4 sm:mx-28 mx-10 mt-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-12"
         variants={rowVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc3d5688.webp"
-              title="E-Auctions"
-              description="Need to buy or sell stock immediately? Easily participate in e-auctions or create.."
-            />
+        {["Processing Support", "Equipment Loans", "Warehouse Solutions", "Bulk Buyers"].map((title, index) => (
+          <motion.div key={index} variants={cardVariants} className="h-[240px] sm:h-[260px] md:h-[280px] lg:h-[300px]">
+            <motion.div variants={cardItemVariants}>
+              <Card
+                image={`https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc${["3d5688", "3975a1", "378bfa", "34b51b"][index]}.webp`}
+                title={title}
+                description="Leverage support for processing, access equipment loans, find warehouses, and connect with bulk buyers."
+              />
+            </motion.div>
           </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc3975a1.webp"
-              title="Loan Against Commodity"
-              description="Our loan against commodity services is gaining popularity in the market .."
-            />
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc378bfa.webp"
-              title="Find Warehouses"
-              description="Choose from a range of options, filters and features, a warehouse that fits your needs and size."
-            />
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc34b51b.webp"
-              title="Find Buyers and Sellers"
-              description="With a network of 650,000 farmers from over 600 Farmer Producer Organisations (FPOs) and more than 10,000 o.."
-            />
-          </motion.div>
-        </motion.div>
+        ))}
       </motion.div>
 
       {/* Corporate Section */}
-      <motion.h1
-        className="sm:mx-28 mx-10 mt-6 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800"
+      <motion.h3
+        className="text-xl sm:text-2xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800 mt-12 sm:mt-14 lg:mt-16 mb-4"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 2.6 }}
         viewport={{ once: true }}
       >
         Corporate
-      </motion.h1>
+      </motion.h3>
+
       <motion.div
-        className="grid sm:grid-cols-4 grid-cols-1 gap-4 sm:mx-28 mx-10 mt-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-12"
         variants={rowVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc3d5688.webp"
-              title="E-Auctions"
-              description="Need to buy or sell stock immediately? Easily participate in e-auctions or create.."
-            />
+        {["Corporate Solutions", "Commodities Trading", "Supply Chain", "Strategic Partnerships"].map((title, index) => (
+          <motion.div key={index} variants={cardVariants} className="h-[240px] sm:h-[260px] md:h-[280px] lg:h-[300px]">
+            <motion.div variants={cardItemVariants}>
+              <Card
+                image={`https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc${["3d5688", "3975a1", "378bfa", "34b51b"][index]}.webp`}
+                title={title}
+                description="Access corporate solutions, participate in commodities trading, streamline supply chains, and form strategic partnerships."
+              />
+            </motion.div>
           </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc3975a1.webp"
-              title="Loan Against Commodity"
-              description="Our loan against commodity services is gaining popularity in the market .."
-            />
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc378bfa.webp"
-              title="Find Warehouses"
-              description="Choose from a range of options, filters and features, a warehouse that fits your needs and size."
-            />
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={cardVariants}>
-          <motion.div variants={cardItemVariants}>
-            <Card
-              image="https://storage.googleapis.com/a2z-web/arya/whoweserve/img_6436cbc34b51b.webp"
-              title="Find Buyers and Sellers"
-              description="With a network of 650,000 farmers from over 600 Farmer Producer Organisations (FPOs) and more than 10,000 o.."
-            />
-          </motion.div>
-        </motion.div>
+        ))}
       </motion.div>
     </div>
   );
